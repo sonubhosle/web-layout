@@ -1,0 +1,20 @@
+
+.not-found{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 15%;
+  }
+
+  .not-found h2{
+    font-weight: 800;
+    font-size: 95px;
+    color: var(--text-light);
+  }
+
+  .not-found p{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-light);
+  }
+  

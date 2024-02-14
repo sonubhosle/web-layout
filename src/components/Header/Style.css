@@ -1,0 +1,112 @@
+header {
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0px 4% 0px 5%;
+    background-color: var(--bg-white);
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header .logo a {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+header .right{
+    column-gap: 2rem;
+}
+header .menu-btn {
+    display: none;
+}
+
+header .menus {
+    column-gap: 2rem;
+}
+
+header .menus .menu-close{
+    display: none;
+}
+
+header .menus .link-name {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-light);
+    transition: .4s ease;
+    display: flex;
+    align-items: center;
+}
+
+header .menus .link-name:hover {
+    color: var(--text-color);
+}
+
+
+
+@media(max-width:768px) {
+    header .menu-btn {
+        display: block;
+        position: relative;
+        z-index: 999;
+        color: var(--text-light);
+    }
+
+    header .menus .menu-close{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: var(--text-light);
+    }
+
+    header .overlay{
+        width: 100%;
+        height: 100vh;
+        background-color: #3333332c;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+    header .overlay.open{
+        visibility: visible;
+        opacity: 9;
+    }
+
+
+    header .buttons{
+        column-gap: 2rem;
+    }
+
+    header .menus {
+        column-gap: 2rem;
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        right: -1000px;
+        top: 0px;
+        background-color: var(--bg-white);
+        width: 250px;
+        height: 100vh;
+        z-index: 9099;
+        flex-direction: column;
+        align-items: normal;
+        padding: 20px;
+        box-shadow: var(--box-shadow);
+    }
+
+    header .menus.open {
+        visibility: visible;
+        opacity: 9;
+        right: 0;
+    }
+    header .menus .link-name{
+        padding: 6px 0px;
+    }
+}

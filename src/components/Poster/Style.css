@@ -1,0 +1,90 @@
+.poster-section {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.poster-section .poster-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.poster-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.poster-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.poster-content h2 {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.poster-content p {
+    color: var(--text-light-2);
+    padding: 10px 0px 20px 0px;
+    width: 800px;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+
+
+@media(max-width:991px){
+     
+    .poster-content h2{
+        font-size: 4vw;
+    }
+  }
+
+  
+
+  @media(max-width:768px){
+     
+    .poster-content h2{
+        font-size: 5vw;
+    }
+
+    .poster-content p {
+        width: 400px;
+    }
+  }
+
+
+  
+  @media(max-width:576px){
+     
+    .poster-content h2{
+        font-size: 5vw;
+    }
+
+    .poster-content p {
+        width: 400px;
+    }
+  }
+
+
+  
+  
+  @media(max-width:450px){
+     
+
+    .poster-content p {
+        width: 300px;
+    }
+  }

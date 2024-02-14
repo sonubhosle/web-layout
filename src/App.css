@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost',sans-serif;
+}
+
+:root{
+  --bg-white:#FFFFFF;
+  --bg-light:#fcfcfc;
+  --bg-button:#aed319;
+  --text-color:#aed319;
+  --text-dark:#101010;
+  --text-light:#787878;
+  --text-light-2:#dfdfdf;
+  --text-white:#FFFFFF;
+  --box-shadow:rgba(0,0,0,0.090) 0px 0px 15px 0px;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg-light);
+}
+
+
+
+/* Predefined Clasess */
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+}
